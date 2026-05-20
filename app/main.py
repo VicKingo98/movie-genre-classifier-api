@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-
+from mangum import Mangum
 from predict import predict_genres
 
 
@@ -34,7 +34,6 @@ def root():
         "message": "Movie Genre Classifier API running"
     }
 
-
 # =========================================
 # PREDICT ENDPOINT
 # =========================================
@@ -51,3 +50,4 @@ def predict(movie: MovieRequest):
     return {
         "predicted_genres": genres
     }
+handler = Mangum(app)

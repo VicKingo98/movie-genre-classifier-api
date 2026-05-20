@@ -32,11 +32,11 @@ git clone <repo-url>
 
 ### 2. Construir imagen Docker
 
-docker build -t movie-genre-appi .
+docker build -t movie-genre-api .
 
 ### 3. Ejecutar contenedor
 
-docker run -p 8000:8000 movie-genre-appi
+docker run -p 8000:8000 movie-genre-api
 
 ## Documentación Swagger
 

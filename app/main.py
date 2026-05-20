@@ -1,3 +1,9 @@
+import os
+
+os.environ["HF_HOME"] = "/tmp/huggingface"
+os.environ["TRANSFORMERS_CACHE"] = "/tmp/huggingface"
+os.environ["SENTENCE_TRANSFORMERS_HOME"] = "/tmp/sentence_transformers"
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 from mangum import Mangum

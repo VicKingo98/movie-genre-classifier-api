@@ -1,0 +1,13 @@
+fastapi==0.136.1
+uvicorn==0.47.0
+
+numpy==2.4.6
+pandas==3.0.3
+
+scikit-learn==1.6.1
+scipy==1.16.3
+
+joblib==1.5.2
+
+sentence-transformers==5.0.0
+transformers==4.57.1

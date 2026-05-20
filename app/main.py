@@ -40,6 +40,12 @@ def root():
         "message": "Movie Genre Classifier API running"
     }
 
+@app.get("/health")
+def health():
+    return {
+        "status": "ok"
+    }
+
 # =========================================
 # PREDICT ENDPOINT
 # =========================================

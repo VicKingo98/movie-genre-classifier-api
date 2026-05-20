@@ -29,7 +29,7 @@ mlb = joblib.load('models/mlb.pkl')
 # =====================================
 
 model_emb = SentenceTransformer(
-    "BAAI/bge-large-en-v1.5"
+    "sentence-transformers/all-MiniLM-L6-v2"
 )
 
 

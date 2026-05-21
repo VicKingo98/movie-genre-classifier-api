@@ -64,7 +64,7 @@ def predict_genres(title, plot, year):
 
     sample_year = scaler_year.transform(
 	pd.DataFrame([[year]], columns=["year"])
-	)	
+	)
 
     sample_year = csr_matrix(sample_year)
 
